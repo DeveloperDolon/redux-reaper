@@ -7,6 +7,7 @@ const TodoForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
     console.log(todoVal);
   };
 
@@ -17,7 +18,10 @@ const TodoForm = () => {
         <TodoInput type="text" setValue={setTodoVal} />
 
         <div className="flex justify-center">
-          <button className="md:text-base text-sm font-semibold bg-yellow-400 rounded-md px-5 py-2">
+          <button
+            type="submit"
+            className="md:text-base text-sm font-semibold bg-yellow-400 rounded-md px-5 py-2"
+          >
             Submit
           </button>
         </div>
